@@ -1,3 +1,4 @@
 language: python
-
+services:
+  - postgresql
 script: python backup.py
