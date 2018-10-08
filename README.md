@@ -1,11 +1,13 @@
 ## Postgresql databases backup
+---
+[![Build Status](https://travis-ci.org/yalex2011/pg_dump_backup.svg?branch=master)](https://travis-ci.org/yalex2011/pg_dump_backup) [![codecov](https://codecov.io/gh/yalex2011/pg_dump_backup/branch/master/graph/badge.svg)](https://codecov.io/gh/yalex2011/pg_dump_backup)
+
 
 run in cron
 ```
 0 23 * * * cd /opt/pg_dump_backup && /usr/bin/python /opt/pg_dump_backup/backup.py
 ```
 
-[![Build Status](https://travis-ci.org/yalex2011/pg_dump_backup.svg?branch=master)](https://travis-ci.org/yalex2011/pg_dump_backup)
 
 
 You can use the [editor on GitHub](https://github.com/yalex2011/pg_dump_backup/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
