@@ -1,6 +1,31 @@
 ## Postgresql databases backup
 [![Build Status](https://travis-ci.org/yalex2011/pg_dump_backup.svg?branch=master)](https://travis-ci.org/yalex2011/pg_dump_backup) [![codecov](https://codecov.io/gh/yalex2011/pg_dump_backup/branch/master/graph/badge.svg)](https://codecov.io/gh/yalex2011/pg_dump_backup) [![HitCount](http://hits.dwyl.io/yalex2011/https://github.com/yalex2011/pg_dump_backup.svg)](http://hits.dwyl.io/yalex2011/https://github.com/yalex2011/pg_dump_backup) [![GitHub stars](https://img.shields.io/github/stars/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/stargazers) [![GitHub issues](https://img.shields.io/github/issues/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/issues) [![GitHub license](https://img.shields.io/github/license/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/blob/master/LICENSE) [![Updates](https://pyup.io/repos/github/yalex2011/pg_dump_backup/shield.svg)](https://pyup.io/repos/github/yalex2011/pg_dump_backup/) [![Python 3](https://pyup.io/repos/github/yalex2011/pg_dump_backup/python-3-shield.svg)](https://pyup.io/repos/github/yalex2011/pg_dump_backup/)
 
+### Install
+```
+git clone https://github.com/yalex2011/pg_dump_backup.git
+cd pg_dump_backup
+pip install -r requirements.txt
+```
+
+### Configure app
+For the program to work, you need to edit the ini file.
+```
+nano database.ini
+```
+Description of the structure of ini file
+
+```markdown
+[db1]
+host=localhost
+database=postgres
+user=postgres
+password=postgres
+
+[listdb]
+db=postgres
+path='/tmp/'
+```
 
 ### Configure cron jobs
 
