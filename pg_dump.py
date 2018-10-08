@@ -1,42 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# import datetime
-# from subprocess import PIPE,Popen
-# import shlex
-#
-# def dump_table(host_name,database_name,user_name,database_password,table_name):
-#
-#     command = 'pg_dump -h {0} -d {1} -U {2} -p 5432 -t public.{3} -Fc -f /tmp/table.dmp'\
-#     .format(host_name,database_name,user_name,table_name)
-#
-#     p = Popen(command,shell=True,stdin=PIPE,stdout=PIPE,stderr=PIPE)
-#
-#     return p.communicate('{}\n'.format(database_password))
-
-# import datetime
-# import gzip
-# import subprocess
-#
-# host_name = '192.168.1.177'
-# database_name = 'test_db'
-# user_name = 'postgres'
-# pg_pass = 'postgres'
-#
-# cmd = 'export PGPASSWORD={3} && pg_dump -h {0} -d {1} -U {2} -p 5432 -Fc -f /tmp/table.dmp'\
-#       .format(host_name,database_name,user_name,pg_pass)
-#
-# print cmd
-#
-# with gzip.open('backup.gz', 'wb') as f:
-#     popen = subprocess.Popen(cmd, stdout=subprocess.PIPE, universal_newlines=True)
-#
-#     for stdout_line in iter(popen.stdout.readline, ""):
-#         f.write(stdout_line.encode('utf-8'))
-#
-#         popen.stdout.close()
-#         popen.wait()
-
 import subprocess
 import datetime
 

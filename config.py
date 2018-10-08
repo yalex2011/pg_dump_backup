@@ -29,16 +29,6 @@ def ConfigSectionMap(section):
     parser.read(filename)
 
     dict1 = []
-    # options = parser.options(section)
-    # for option in options:
-    #     try:
-    #         dict1[option] = parser.get(section, option)
-    #         if dict1[option] == -1:
-    #             DebugPrint("skip: %s" % option)
-    #     except:
-    #         print("exception on %s!" % option)
-    #         dict1[option] = None
-
     dict1 = parser.get(section, 'db')
 
     return dict1

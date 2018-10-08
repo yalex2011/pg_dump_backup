@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import psycopg2
-#from config
 import config
 import pg_dump
 
@@ -71,10 +70,7 @@ def get_databases(section):
 if __name__ == '__main__':
     #connect()
     sections = config.ReadConfig()
-    print sections
-
     listdb = config.ConfigSectionMap('listdb').split(',')
-    print listdb
     path_backup = config.ConfigSectionGet('listdb','path')
 
     for section in sections:
@@ -88,7 +84,6 @@ if __name__ == '__main__':
 
             for r in res:
                 if r[0] in listdb:
-
                     print ('Starting backup database:')
                     database_name = r[0]
                     print database_name
