@@ -1,6 +1,5 @@
 ## Postgresql databases backup
----
-[![Build Status](https://travis-ci.org/yalex2011/pg_dump_backup.svg?branch=master)](https://travis-ci.org/yalex2011/pg_dump_backup) [![codecov](https://codecov.io/gh/yalex2011/pg_dump_backup/branch/master/graph/badge.svg)](https://codecov.io/gh/yalex2011/pg_dump_backup)
+[![Build Status](https://travis-ci.org/yalex2011/pg_dump_backup.svg?branch=master)](https://travis-ci.org/yalex2011/pg_dump_backup) [![codecov](https://codecov.io/gh/yalex2011/pg_dump_backup/branch/master/graph/badge.svg)](https://codecov.io/gh/yalex2011/pg_dump_backup) [![GitHub stars](https://img.shields.io/github/stars/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/stargazers) [![GitHub issues](https://img.shields.io/github/issues/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/issues) [![GitHub license](https://img.shields.io/github/license/yalex2011/pg_dump_backup.svg)](https://github.com/yalex2011/pg_dump_backup/blob/master/LICENSE)
 
 
 run in cron
