@@ -81,9 +81,8 @@ if __name__ == '__main__':
 
         if section != 'listdb':
             host_name = config.ConfigSectionGet(section, 'host')
-            print host_name
             user_name = config.ConfigSectionGet(section, 'user')
-            print user_name
+            password = config.ConfigSectionGet(section, 'password')
 
             res = get_databases(section)
 
@@ -93,5 +92,5 @@ if __name__ == '__main__':
                     print ('Starting backup database:')
                     database_name = r[0]
                     print database_name
-                    pg_dump.RunPG_dump(host_name,user_name,database_name,path_backup)
+                    pg_dump.RunPG_dump(host_name, user_name, password, database_name, path_backup)
                     print ('Backup complite')
